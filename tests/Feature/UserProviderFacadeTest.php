@@ -3,12 +3,13 @@
 namespace EasyPanelTest\Feature;
 
 use EasyPanel\Support\Contract\UserProviderFacade;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use EasyPanelTest\TestCase;
 
 class UserProviderFacadeTest extends TestCase
 {
-    use RefreshDatabase;
+    use DatabaseMigrations;
 
     /** @test * */
     public function find_a_real_user_by_id(){

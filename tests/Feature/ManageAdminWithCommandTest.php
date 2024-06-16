@@ -2,17 +2,19 @@
 
 namespace EasyPanelTest\Feature;
 
+use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Artisan;
 use EasyPanelTest\TestCase;
 use EasyPanel\Support\Contract\UserProviderFacade;
-
+use Illuminate\Support\Facades\Schema;
 class ManageAdminWithCommandTest extends TestCase
 {
-    use RefreshDatabase;
+    use DatabaseMigrations;
 
     /** @test * */
     public function create_admin_with_command(){
+
         Artisan::call('panel:add', [
             'user' => $this->user->id
         ]);

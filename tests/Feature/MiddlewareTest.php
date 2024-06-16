@@ -4,6 +4,7 @@
 namespace EasyPanelTest\Feature;
 
 use EasyPanel\Http\Middleware\isAdmin;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
@@ -12,7 +13,7 @@ use EasyPanelTest\TestCase;
 
 class MiddlewareTest extends TestCase
 {
-    use RefreshDatabase;
+    use DatabaseMigrations;
 
     protected function setUp(): void
     {
