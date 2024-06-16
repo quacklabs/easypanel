@@ -2,9 +2,9 @@
 
 namespace EasyPanelTest;
 
-use App\Models\Article;
 use EasyPanel\EasyPanelServiceProvider;
 use EasyPanel\Parsers\StubParser;
+use EasyPanelTest\Dependencies\Article;
 use EasyPanelTest\Dependencies\User;
 use Faker\Factory;
 use Illuminate\Database\Eloquent\Collection;

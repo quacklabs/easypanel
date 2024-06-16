@@ -2,7 +2,8 @@
 
 namespace EasyPanelTest\Unit;
 
-use App\Models\Article;
+
+use EasyPanelTest\Dependencies\Article;
 use EasyPanelTest\Dependencies\User;
 use Illuminate\Support\Str;
 use EasyPanel\Parsers\HTMLInputs\Text;
