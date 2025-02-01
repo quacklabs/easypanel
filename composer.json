@@ -1,11 +1,15 @@
 {
-    "name": "rezaamini-ir/laravel-easypanel",
+    "name": "quacklabs/easypanel",
     "license": "MIT",
     "description": "An admin panel based on livewire",
     "authors": [
         {
             "name": "Reza Amini",
             "email": "rezaaminiroyal@gmail.com"
+        },
+        {
+            "name": "Mark Boleigha",
+            "email": "donhoenix@gmail.com"
         }
     ],
     "require": {
