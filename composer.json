@@ -2,16 +2,25 @@
     "name": "rezaamini-ir/laravel-easypanel",
     "license": "MIT",
     "description": "An admin panel based on livewire",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "authors": [
         {
             "name": "Reza Amini",
             "email": "rezaaminiroyal@gmail.com"
         }
     ],
+    "repositories" : [
+        {
+            "type": "vcs",
+            "url": "https://github.com/quacklabs/laravel-easyblade.git",
+            "canonical": false
+        },  
+    ],
     "require": {
         "php": "^7.3|^8.0|^8.2",
         "illuminate/support": "^8.0|^9.0|^10.0",
-        "rezaamini-ir/laravel-easyblade" : "^0.5|^1.0",
+        "quacklabs/laravel-easyblade" : "dev-master",
         "laravel/framework": "^8.0|^9.0|^10.0|^11.0",
         "livewire/livewire": "^1.0|^2.3|^3.1",
         "iya30n/dynamic-acl": "^1.0"
